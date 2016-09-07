@@ -6,6 +6,7 @@ var nodesBlackList = {
 };
 
 function toDataUri(img) {
+    img.setAttribute('crossOrigin', 'anonymous');
     var canvas = document.createElement('canvas');
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
