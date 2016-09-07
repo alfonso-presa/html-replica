@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="clone.js"></script>
+        <style>
+            p.pepe {
+                color: red;
+            }
+            input {
+                min-width: 200px;
+            }
+
+            iframe {
+                height: 400px;
+            }
+
+            .source, iframe {
+                border: 1px solid black;
+                width: 100%;
+            }
+            .source {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body onload="doIt()">
+        <h2>Source</h2>
+
+        <div class="source">
+            <div id="this">
+                <input type="text" value="hola">
+                <p class="pepe">
+                    Hola
+                </p>
+                <a href="hola">a</a>
+                <img src="cat1.jpg">
+            </div>
+        </div>
+
+        <h2>Result</h2>
+
+        <iframe style="border:1px solid black" id="result"></iframe>
+    </body>
+</html>
